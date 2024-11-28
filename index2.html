@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Publicidad y Eliminación de Cookies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(234, 221, 202);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+        .delete-cookies-box {
+            padding: 15px 30px;
+            background-color: #28a745;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .instructions {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        .pixel-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            width: 100%;
+        }
+        .anuncio {
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <!-- Versión en español -->
+    <h2>Eliminar Cookies</h2>
+    <div class="delete-cookies-box" onclick="deleteCookies()">Eliminar cookies</div>
+    <div class="instructions">
+        <p>Para eliminar todas las cookies, sigue las instrucciones para tu navegador:</p>
+        <ul>
+            <li>Google Chrome: Copia y pega en la barra de direcciones: <code>chrome://settings/clearBrowserData</code></li>
+            <li>Mozilla Firefox: Copia y pega en la barra de direcciones: <code>about:preferences#privacy</code></li>
+            <li>Safari: Preferencias del sistema y busca privacidad para encontrar la configuración de cookies.</li>
+            <li>Microsoft Edge: Copia y pega en la barra de direcciones: <code>edge://settings/clearBrowserData</code></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Versión en inglés -->
+    <h2>Delete Cookies</h2>
+    <div class="delete-cookies-box" onclick="deleteCookies()">Delete cookies</div>
+    <div class="instructions">
+        <p>To delete all cookies, follow the instructions for your browser:</p>
+        <ul>
+            <li>Google Chrome: Copy and paste in the address bar: <code>chrome://settings/clearBrowserData</code></li>
+            <li>Mozilla Firefox: Copy and paste in the address bar: <code>about:preferences#privacy</code></li>
+            <li>Safari: System Preferences and look for Privacy to find the cookie settings.</li>
+            <li>Microsoft Edge: Copy and paste in the address bar: <code>edge://settings/clearBrowserData</code></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Cuadrícula de anuncios -->
+<div class="pixel-grid">
+    <div class="anuncio">
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-XXXXXXXXXXXXXXXX",
+                enable_page_level_ads: true
+            });
+        </script>
+    </div>
+    <div class="anuncio">
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-XXXXXXXXXXXXXXXX",
+                enable_page_level_ads: true
+            });
+        </script>
+    </div>
+    <div class="anuncio">
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-XXXXXXXXXXXXXXXX",
+                enable_page_level_ads: true
+            });
+        </script>
+    </div>
+    <div class="anuncio">
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-XXXXXXXXXXXXXXXX",
+                enable_page_level_ads: true
+            });
+        </script>
+    </div>
+    <div class="anuncio">
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-XXXXXXXXXXXXXXXX",
+                enable_page_level_ads: true
+            });
+        </script>
+    </div>
+    <div class="anuncio">
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-XXXXXXXXXXXXXXXX",
+                enable_page_level_ads: true
+            });
+        </script>
+    </div>
+    <div class="anuncio">
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-XXXXXXXXXXXXXXXX",
+                enable_page_level_ads: true
+            });
+        </script>
+    </div>
+    <div class="anuncio">
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-XXXXXXXXXXXXXXXX",
+                enable_page_level_ads: true
+            });
+        </script>
+    </div>
+    <div class="anuncio">
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-XXXXXXXXXXXXXXXX",
+                enable_page_level_ads: true
+            });
+        </script>
+    </div>
+</div>
+
+<footer>
+    © 2024 Página de Ejemplo | Contacto: info@paginaejemplo.com
+</footer>
+
+<script>
+    function deleteCookies() {
+        const cookies = document.cookie.split(";");
+        for (const cookie of cookies) {
+            const eqPos = cookie.indexOf("=");
+            const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+            document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;";
+        }
+        alert("Cookies de esta página eliminadas.");
+    }
+</script>
+
+</body>
+</html>
